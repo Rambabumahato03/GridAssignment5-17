@@ -1,0 +1,35 @@
+*{
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+[class^="child-"]{
+    background-color: red;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.parent{
+    display: grid;
+    background-color:skyblue;
+    grid-template-columns:
+    [grid-start] 1fr
+    [main-start] 1fr
+    [main-middle]1fr
+    [grid-end];
+    grid-template-rows: 
+    [header-start]1fr 
+    [header-end]4fr 
+    [footer-start]1fr
+    [footer-end];
+    
+    grid-gap: 1rem;
+}
+.child-1,.child-4{
+    grid-column: grid-start/grid-end;
+}
+
+
+

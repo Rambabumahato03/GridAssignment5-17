@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+ }
+ [class^="child-"]{
+    background-color: orange;
+    text-align: center;
+    font-size: 1.5rem;
+ }
+
+ .parent{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1.5fr;
+    grid-template-rows: 1fr 1.25fr 1.25fr 1fr 1fr 1fr;
+    grid-template-areas:"header header header"
+                        "nav nav nav1"
+                        "nav nav nav2"
+                        "nav3 nav4 nav4"
+                        "nav3 nav5 nav5"
+                        "nav3 nav6 nav6";
+ }
+ .child-1{
+    grid-area: header;
+ }
+ .child-2{
+    grid-area: nav;
+ }
+ .child-3{
+    grid-area: nav1;
+ }
+ .child-4{
+    grid-area: nav2;
+ }
+ .child-5{
+    grid-area: nav3;
+ }
+ .child-6{
+    grid-area: nav4;
+ }
+ .child-7{
+    grid-area: nav5;
+ }
+.child-8{
+    grid-area: nav6;
+}
